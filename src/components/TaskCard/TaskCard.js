@@ -38,10 +38,13 @@ const TaskCard = ({ task, onEdit, onDelete, onStatusChange, color, isFiltered, o
     return (
         <div
             className={`task-card ${isFiltered ? '' : 'filtered-out'}`}
-            style={{ borderColor: color }}
+            style={{ '--card-color': color }}
             id={`task-${task.id}`}
             onClick={() => onClick(task)}
         >
+            <svg className="task-card-top-border" width="100%" height="20" viewBox="0 0 300 24" preserveAspectRatio="none">
+                <path d="M0 0 L300 0 L300 24 L0 24 Q150 48 0 24" fill="var(--card-color)" />
+            </svg>
             <div className="task-content">
                 <h3 className="task-title">
                     {getStatusIcon(task.status)}

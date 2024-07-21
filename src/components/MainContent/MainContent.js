@@ -4,6 +4,7 @@ import Modal from '../Modal/Modal';
 import TaskForm from '../TaskForm/TaskForm';
 import ConnectionLines from '../ConnectionLines/ConnectionLines';
 import ContextMenu from '../ContextMenu/ContextMenu';
+import { scheduleAllReminders } from '../../services/ReminderService';
 import './MainContent.css';
 
 const COLOR_SET = [
@@ -37,7 +38,9 @@ const MainContent = ({ activeWorkspace }) => {
     useEffect(() => {
         const savedTasks = localStorage.getItem(`tasks_${activeWorkspace}`);
         if (savedTasks) {
-            setTasks(JSON.parse(savedTasks));
+            const parsedTasks = JSON.parse(savedTasks);
+            setTasks(parsedTasks);
+            scheduleAllReminders(parsedTasks);
         } else {
             setTasks({ final: [], parent: [], child: [], grandchild: [] });
         }
@@ -47,6 +50,7 @@ const MainContent = ({ activeWorkspace }) => {
 
     useEffect(() => {
         localStorage.setItem(`tasks_${activeWorkspace}`, JSON.stringify(tasks));
+        scheduleAllReminders(tasks);
     }, [tasks, activeWorkspace]);
 
     const columns = useMemo(() => [

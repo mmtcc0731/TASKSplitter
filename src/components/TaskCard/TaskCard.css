@@ -1,32 +1,29 @@
 .task-card {
     background-color: white;
-    border-radius: 4px;
+    border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
     padding: 12px;
     margin-bottom: 8px;
-    height: 90px;
+    min-height: 85px;
     position: relative;
-    border: 2px solid;
+    border: 2px solid var(--card-color);
     transition: opacity 0.3s ease, transform 0.3s ease;
     cursor: pointer;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
-.task-card.highlighted {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-
-.task-card.filtered-out {
-    opacity: 0.3;
+.task-card-top-border {
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
 }
 
 .task-content {
-    word-break: break-word;
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
+    margin-top: 10px;
+    z-index: 1;
 }
 
 .task-title {
@@ -35,7 +32,6 @@
     gap: 8px;
     margin-bottom: 8px;
     min-height: 40px;
-    /* Increased to fully accommodate two lines */
 }
 
 .title-text {
@@ -45,8 +41,22 @@
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.3;
-    /* Adjusted for better readability */
     margin: 0;
+    word-break: break-word;
+}
+
+.task-card::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(50% + 2px);
+    /* 50% of the card width plus 2px to cover the corner */
+    height: 4px;
+    /* Thickness of the top border */
+    background-color: var(--card-color);
+    border-top-left-radius: 4px;
+    /* Match the card's border radius */
 }
 
 .status-icon {
@@ -54,7 +64,6 @@
     height: 14px;
     flex-shrink: 0;
     margin-top: 3px;
-    /* Adjusted to align with first line of text */
 }
 
 .status-icon.completed {
@@ -75,7 +84,6 @@
     align-items: center;
     font-size: 12px;
     margin-top: auto;
-    /* Push to bottom of task-content */
 }
 
 .task-deadline,
@@ -99,14 +107,15 @@
 
 .task-actions {
     position: absolute;
-    top: 4px;
-    right: 4px;
+    top: 8px;
+    right: 8px;
     display: flex;
     gap: 4px;
+    z-index: 2;
 }
 
 .task-action-btn {
-    background: none;
+    background: white;
     border: none;
     cursor: pointer;
     padding: 4px;
@@ -117,12 +126,4 @@
 
 .task-action-btn:hover {
     background-color: #ebecf0;
-}
-
-.task-progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 4px;
-    transition: width 0.3s ease;
 }

@@ -40,6 +40,11 @@ body.forest-mode {
     border: 1px solid #a5d6a7;
 }
 
+.forest-mode .task-action-btn {
+    background: #ffffff;
+    color: #2e7d32;
+}
+
 .forest-mode .add-task-btn {
     background-color: #4caf50;
     color: #ffffff;

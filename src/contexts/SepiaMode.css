@@ -40,6 +40,11 @@ body.sepia-mode {
     border: 1px solid #d0c8b0;
 }
 
+.sepia-mode .task-action-btn {
+    background: #fdf6e3;
+    color: #5d4037;
+}
+
 .sepia-mode .add-task-btn {
     background-color: #d7cba9;
     color: #5d4037;

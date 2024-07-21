@@ -39,6 +39,11 @@ body.dark-mode {
     color: white;
 }
 
+.dark-mode .task-action-btn {
+    background: #2d3436;
+    color: white;
+}
+
 .dark-mode .add-task-btn {
     background-color: #b2bec3;
     color: #2d3436;
