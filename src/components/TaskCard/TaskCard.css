@@ -1,0 +1,119 @@
+.task-card {
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    padding: 12px;
+    margin-bottom: 8px;
+    height: 70px;
+    position: relative;
+    border: 2px solid;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.task-card.highlighted {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.task-card.filtered-out {
+    opacity: 0.3;
+}
+
+.task-content {
+    word-break: break-word;
+}
+
+.task-title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.status-icon {
+    width: 14px;
+    height: 14px;
+}
+
+.status-icon.completed {
+    color: #2ecc71;
+}
+
+.status-icon.in-progress {
+    color: #3498db;
+}
+
+.status-icon.not-started {
+    color: #e74c3c;
+}
+
+.task-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+
+.task-deadline,
+.task-priority,
+.task-status {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.status-select {
+    padding: 2px 4px;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background-color: white;
+}
+
+.status-select.未着手 {
+    color: #e74c3c;
+}
+
+.status-select.進行中 {
+    color: #3498db;
+}
+
+.status-select.完了 {
+    color: #2ecc71;
+}
+
+.task-actions {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    display: flex;
+    gap: 4px;
+}
+
+.task-action-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: #5e6c84;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.task-action-btn:hover {
+    background-color: #ebecf0;
+}
+
+.task-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.task-progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 4px;
+    transition: width 0.3s ease;
+}

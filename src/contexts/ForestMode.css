@@ -1,0 +1,213 @@
+body.forest-mode {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.forest-mode .app {
+    background-color: #e8f5e9;
+}
+
+.forest-mode .sidebar {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.forest-mode .main-content {
+    background-color: #e8f5e9;
+}
+
+.forest-mode .workspace-title {
+    color: #2e7d32;
+}
+
+.forest-mode .column {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.forest-mode .column-title {
+    color: #1b5e20;
+}
+
+.forest-mode .task-list {
+    background-color: #f1f8e9;
+}
+
+.forest-mode .task-card {
+    background-color: #ffffff;
+    color: #2e7d32;
+    border: 1px solid #a5d6a7;
+}
+
+.forest-mode .add-task-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.forest-mode .task-form .submit-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.forest-mode .task-form button:hover {
+    background-color: #45a049;
+}
+
+.forest-mode .modal-content {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+}
+
+.forest-mode .modal-close {
+    color: #4caf50;
+}
+
+.forest-mode .form-label {
+    color: #1b5e20;
+}
+
+.forest-mode .form-input,
+.forest-mode textarea.form-input {
+    background-color: #ffffff;
+    color: #2e7d32;
+    border-color: #a5d6a7;
+}
+
+.forest-mode .form-input:focus {
+    border-color: #4caf50;
+    box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
+}
+
+.forest-mode .form-submit {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.forest-mode .form-submit:hover {
+    background-color: #45a049;
+}
+
+.forest-mode .error-message {
+    color: #c62828;
+}
+
+.forest-mode .add-workspace-btn {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.forest-mode .add-workspace-btn:hover {
+    background-color: #45a049;
+}
+
+.forest-mode .footer-btn {
+    color: #2e7d32;
+}
+
+.forest-mode .footer-btn:hover {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .color-option {
+    box-shadow: 0 0 0 2px #a5d6a7;
+}
+
+.forest-mode .color-option.selected {
+    box-shadow: 0 0 0 2px #a5d6a7, 0 0 0 4px #4caf50;
+}
+
+.forest-mode .custom-color-input button {
+    background-color: #f1f8e9;
+    border-color: #a5d6a7;
+    color: #2e7d32;
+}
+
+.forest-mode .custom-color-input button:hover {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .workspace-item {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .workspace-item.active {
+    background-color: #e9f8f8;
+}
+
+.forest-mode .workspace-button {
+    color: #2e7d32;
+}
+
+.forest-mode .workspace-item.active .workspace-button {
+    color: #4caf50;
+}
+
+.forest-mode .workspace-action-button {
+    color: #1b5e20;
+}
+
+.forest-mode .workspace-action-button:hover {
+    background-color: #c8e6c9;
+    color: #2e7d32;
+}
+
+.forest-mode .context-menu {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+    border-color: #a5d6a7;
+}
+
+.forest-mode .context-menu-item:hover {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .context-menu-icon {
+    color: #4caf50;
+}
+
+.forest-mode .context-menu-item span {
+    color: #2e7d32;
+}
+
+.forest-mode .rippleOutlineToggle {
+    color: #4caf50;
+    border-color: #4caf50;
+}
+
+.forest-mode .rippleOutlineToggle:hover {
+    color: #ffffff;
+    background-color: rgba(76, 175, 80, 0.1);
+}
+
+.forest-mode .rippleOutlineToggle.toggled {
+    color: #ffffff;
+    background-color: #4caf50;
+}
+
+.forest-mode .rippleOutlineToggle::after {
+    background: rgba(46, 125, 50, 0.2);
+}
+
+.forest-mode .toggle-button-group .rippleOutlineToggle {
+    background-color: #f1f8e9;
+    color: #2e7d32;
+}
+
+.forest-mode .toggle-button-group .rippleOutlineToggle.active {
+    background-color: #4caf50;
+    color: #ffffff;
+}
+
+.forest-mode .toggle-button-group .rippleOutlineToggle:hover {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .workspace-item {
+    margin-bottom: 5px;
+    border-radius: 4px;
+}
+
+.forest-mode .workspace-item:not(.active):hover {
+    background-color: rgba(76, 175, 80, 0.1);
+}

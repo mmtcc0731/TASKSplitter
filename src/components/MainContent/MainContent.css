@@ -1,0 +1,111 @@
+/* src/components/MainContent/MainContent.css */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-x: auto;
+    position: relative;
+}
+
+.workspace-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.columns-container {
+    display: flex;
+    gap: 20px;
+    min-width: min-content;
+}
+
+.column {
+    flex: 1;
+    min-width: 250px;
+    background-color: #f4f5f7;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.column-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #5e6c84;
+}
+
+.task-list {
+    min-height: 200px;
+    margin-bottom: 16px;
+}
+
+.add-task-btn {
+    width: 100%;
+    padding: 8px;
+    background-color: #ebecf0;
+    border: none;
+    border-radius: 4px;
+    color: #5e6c84;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.add-task-btn:hover {
+    background-color: #dfe1e6;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.task-form textarea {
+    width: 100%;
+    min-height: 100px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+.task-form .submit-btn {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.task-form button:hover {
+    background-color: #2980b9;
+}
+
+.columns-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.connecting-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: white;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.task-card {
+    cursor: move;
+}
+
+.task-card:active {
+    opacity: 0.5;
+}
+
+.task-list > div {
+    transition: transform 0.2s ease;
+}

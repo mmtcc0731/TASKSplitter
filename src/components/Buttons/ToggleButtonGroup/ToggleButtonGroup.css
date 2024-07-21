@@ -1,0 +1,9 @@
+/* src/components/ToggleButtonGroup/ToggleButtonGroup.css */
+.toggle-button-group {
+    display: flex;
+    gap: 8px;
+}
+
+.toggle-button-group .rippleOutlineToggle {
+    flex: 1;
+}

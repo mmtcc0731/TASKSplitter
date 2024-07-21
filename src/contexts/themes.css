@@ -1,0 +1,72 @@
+/* セピアモード */
+body.sepia-mode {
+    background-color: #f1e7d0;
+    color: #5d4037;
+}
+
+.sepia-mode .sidebar {
+    background-color: #e6d9c0;
+}
+
+.sepia-mode .main-content {
+    background-color: #f9f3e5;
+}
+
+.sepia-mode .task-card {
+    background-color: #fdf6e3;
+    border-color: #d0c8b0;
+}
+
+/* フォレストモード */
+body.forest-mode {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.forest-mode .sidebar {
+    background-color: #c8e6c9;
+}
+
+.forest-mode .main-content {
+    background-color: #f1f8e9;
+}
+
+.forest-mode .task-card {
+    background-color: #ffffff;
+    border-color: #a5d6a7;
+}
+
+/* 共通のスタイル調整 */
+.theme-selector {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.theme-selector select {
+    margin-left: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: #333;
+}
+
+/* 各モードでのセレクトボックスのスタイル調整 */
+.dark-mode .theme-selector select {
+    background-color: #444;
+    color: #fff;
+    border-color: #666;
+}
+
+.sepia-mode .theme-selector select {
+    background-color: #f1e7d0;
+    color: #5d4037;
+    border-color: #d0c8b0;
+}
+
+.forest-mode .theme-selector select {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+    border-color: #a5d6a7;
+}

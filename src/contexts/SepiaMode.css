@@ -1,0 +1,204 @@
+body.sepia-mode {
+    background-color: #f1e7d0;
+    color: #5d4037;
+}
+
+.sepia-mode .app {
+    background-color: #f1e7d0;
+}
+
+.sepia-mode .sidebar {
+    background-color: #e6d9c0;
+    color: #5d4037;
+}
+
+.sepia-mode .main-content {
+    background-color: #f1e7d0;
+}
+
+.sepia-mode .workspace-title {
+    color: #5d4037;
+}
+
+.sepia-mode .column {
+    background-color: #f9f3e5;
+    color: #5d4037;
+    border: 1px solid #d0c8b0;
+}
+
+.sepia-mode .column-title {
+    color: #8d6e63;
+}
+
+.sepia-mode .task-list {
+    background-color: #f9f3e5;
+}
+
+.sepia-mode .task-card {
+    background-color: #fdf6e3;
+    color: #5d4037;
+    border: 1px solid #d0c8b0;
+}
+
+.sepia-mode .add-task-btn {
+    background-color: #d7cba9;
+    color: #5d4037;
+}
+
+.sepia-mode .task-form .submit-btn {
+    background-color: #8d6e63;
+    color: #f1e7d0;
+}
+
+.sepia-mode .task-form button:hover {
+    background-color: #795548;
+}
+
+.sepia-mode .modal-content {
+    background-color: #f9f3e5;
+    color: #5d4037;
+}
+
+.sepia-mode .modal-close {
+    color: #8d6e63;
+}
+
+.sepia-mode .form-label {
+    color: #795548;
+}
+
+.sepia-mode .form-input,
+.sepia-mode textarea.form-input {
+    background-color: #fdf6e3;
+    color: #5d4037;
+    border-color: #d0c8b0;
+}
+
+.sepia-mode .form-input:focus {
+    border-color: #8d6e63;
+    box-shadow: 0 0 0 2px rgba(141, 110, 99, 0.2);
+}
+
+.sepia-mode .form-submit {
+    background-color: #8d6e63;
+    color: #f1e7d0;
+}
+
+.sepia-mode .form-submit:hover {
+    background-color: #795548;
+}
+
+.sepia-mode .error-message {
+    color: #c0392b;
+}
+
+.sepia-mode .add-workspace-btn {
+    background-color: #8d6e63;
+    color: #f1e7d0;
+}
+
+.sepia-mode .add-workspace-btn:hover {
+    background-color: #795548;
+}
+
+.sepia-mode .footer-btn {
+    color: #5d4037;
+}
+
+.sepia-mode .footer-btn:hover {
+    background-color: #e6d9c0;
+}
+
+.sepia-mode .color-option {
+    box-shadow: 0 0 0 2px #d0c8b0;
+}
+
+.sepia-mode .color-option.selected {
+    box-shadow: 0 0 0 2px #d0c8b0, 0 0 0 4px #8d6e63;
+}
+
+.sepia-mode .custom-color-input button {
+    background-color: #f9f3e5;
+    border-color: #d0c8b0;
+    color: #5d4037;
+}
+
+.sepia-mode .custom-color-input button:hover {
+    background-color: #e6d9c0;
+}
+
+.sepia-mode .workspace-item {
+    background-color: #e6d9c0;
+}
+
+.sepia-mode .workspace-item.active {
+    background-color: #f9f3e5;
+}
+
+.sepia-mode .workspace-button {
+    color: #5d4037;
+}
+
+.sepia-mode .workspace-item.active .workspace-button {
+    color: #8d6e63;
+}
+
+.sepia-mode .workspace-action-button {
+    color: #795548;
+}
+
+.sepia-mode .workspace-action-button:hover {
+    background-color: #e6d9c0;
+    color: #5d4037;
+}
+
+.sepia-mode .context-menu {
+    background-color: #f9f3e5;
+    color: #5d4037;
+    border-color: #d0c8b0;
+}
+
+.sepia-mode .context-menu-item:hover {
+    background-color: #e6d9c0;
+}
+
+.sepia-mode .context-menu-icon {
+    color: #8d6e63;
+}
+
+.sepia-mode .context-menu-item span {
+    color: #5d4037;
+}
+
+.sepia-mode .rippleOutlineToggle {
+    color: #8d6e63;
+    border-color: #8d6e63;
+}
+
+.sepia-mode .rippleOutlineToggle:hover {
+    color: #f1e7d0;
+    background-color: rgba(141, 110, 99, 0.1);
+}
+
+.sepia-mode .rippleOutlineToggle.toggled {
+    color: #f1e7d0;
+    background-color: #8d6e63;
+}
+
+.sepia-mode .rippleOutlineToggle::after {
+    background: rgba(93, 64, 55, 0.2);
+}
+
+.sepia-mode .toggle-button-group .rippleOutlineToggle {
+    background-color: #f9f3e5;
+    color: #5d4037;
+}
+
+.sepia-mode .toggle-button-group .rippleOutlineToggle.active {
+    background-color: #8d6e63;
+    color: #f1e7d0;
+}
+
+.sepia-mode .toggle-button-group .rippleOutlineToggle:hover {
+    background-color: #e6d9c0;
+}

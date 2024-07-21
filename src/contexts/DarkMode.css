@@ -1,0 +1,203 @@
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+.dark-mode .app {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .sidebar {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    /* サイドバーのテキスト色を明示的に指定 */
+}
+
+.dark-mode .main-content {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .workspace-title {
+    color: #ffffff;
+}
+
+.dark-mode .column {
+    background-color: #2d3436;
+    color: white;
+}
+
+.dark-mode .column-title {
+    color: #dfe6e9;
+}
+
+.dark-mode .task-list {
+    background-color: #2d3436;
+}
+
+.dark-mode .task-card {
+    background-color: #2d3436;
+    color: white;
+}
+
+.dark-mode .add-task-btn {
+    background-color: #b2bec3;
+    color: #2d3436;
+}
+
+.dark-mode .task-form .submit-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.dark-mode .task-form button:hover {
+    background-color: #2980b9;
+}
+
+.dark-mode .modal-content {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode .modal-close {
+    color: #ccc;
+}
+
+.dark-mode .form-label {
+    color: #ccc;
+}
+
+.dark-mode .form-input,
+.dark-mode textarea.form-input {
+    background-color: #444;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .form-input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.dark-mode .form-submit {
+    background-color: #3498db;
+    color: white;
+}
+
+.dark-mode .form-submit:hover {
+    background-color: #2980b9;
+}
+
+.dark-mode .error-message {
+    color: #e74c3c;
+}
+
+.dark-mode .add-workspace-btn {
+    background-color: #3498db;
+    color: white;
+}
+
+.dark-mode .add-workspace-btn:hover {
+    background-color: #2980b9;
+}
+
+.dark-mode .footer-btn {
+    color: white;
+}
+
+.dark-mode .footer-btn:hover {
+    background-color: #636e72;
+}
+
+.dark-mode .color-option {
+    box-shadow: 0 0 0 2px #333;
+}
+
+.dark-mode .color-option.selected {
+    box-shadow: 0 0 0 2px #333, 0 0 0 4px #000;
+}
+
+.dark-mode .custom-color-input button {
+    background-color: #444;
+    border-color: #666;
+    color: white;
+}
+
+.dark-mode .custom-color-input button:hover {
+    background-color: #555;
+}
+
+.dark-mode .workspace-item {
+    background-color: #333;
+}
+
+.dark-mode .workspace-item.active {
+    background-color: #555;
+}
+
+.dark-mode .workspace-button {
+    color: #eee;
+}
+
+.dark-mode .workspace-item.active .workspace-button {
+    color: #3498db;
+}
+
+.dark-mode .workspace-action-button {
+    color: #ccc;
+}
+
+.dark-mode .workspace-action-button:hover {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .context-menu {
+    background-color: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .context-menu-item:hover {
+    background-color: #444;
+}
+
+.dark-mode .context-menu-icon {
+    color: #ddd;
+}
+
+.dark-mode .context-menu-item span {
+    color: #fff;
+}
+
+.dark-mode .rippleOutlineToggle {
+    color: #3498db;
+    border-color: #3498db;
+}
+
+.dark-mode .rippleOutlineToggle:hover {
+    color: white;
+    background-color: rgba(52, 152, 219, 0.1);
+}
+
+.dark-mode .rippleOutlineToggle.toggled {
+    color: white;
+    background-color: #3498db;
+}
+
+.dark-mode .rippleOutlineToggle::after {
+    background: rgba(0, 0, 0, .5);
+}
+
+.dark-mode .toggle-button-group .rippleOutlineToggle {
+    background-color: #333;
+    color: #eee;
+}
+
+.dark-mode .toggle-button-group .rippleOutlineToggle.active {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.dark-mode .toggle-button-group .rippleOutlineToggle:hover {
+    background-color: #555;
+}
