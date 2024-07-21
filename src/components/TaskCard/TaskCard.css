@@ -116,7 +116,7 @@
 
 .task-action-btn {
     background: white;
-    border: none;
+    border: 1px solid #ddd;
     cursor: pointer;
     padding: 4px;
     color: #5e6c84;

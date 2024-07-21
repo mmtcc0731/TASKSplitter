@@ -41,7 +41,7 @@ const showNotification = (task) => {
             if (permission === 'granted') {
                 new Notification('タスクリマインダー', {
                     body: `"${task.title}" の期限が近づいています。`,
-                    icon: '/path/to/icon.png'  // アプリのアイコンのパスを指定してください
+                    icon: '../../../frontend/public/favicon.ico'  // アプリのアイコンのパスを指定してください
                 });
             }
         });

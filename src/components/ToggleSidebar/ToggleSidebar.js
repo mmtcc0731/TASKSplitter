@@ -64,6 +64,8 @@ const ToggleSidebar = ({ children, onToggle }) => {
         return () => window.removeEventListener('resize', handleResize);
     }, [isOpen, onToggle]);
 
+    
+
     return (
         <SidebarContainer isOpen={isOpen}>
             <SidebarContent isOpen={isOpen}>{children}</SidebarContent>

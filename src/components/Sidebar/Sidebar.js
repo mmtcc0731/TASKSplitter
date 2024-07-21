@@ -16,7 +16,7 @@ const themes = {
         inputBorder: '#ddd',
     },
     dark: {
-        background: '#333333',
+        background: '#2c2c2c',
         text: '#ffffff',
         buttonBg: '#4a4a4a',
         buttonText: '#ffffff',
@@ -25,7 +25,7 @@ const themes = {
         inputBorder: '#555',
     },
     sepia: {
-        background: '#f1e7d0',
+        background: '#e6d9c0',
         text: '#5d4037',
         buttonBg: '#d7cba9',
         buttonText: '#5d4037',
@@ -34,7 +34,7 @@ const themes = {
         inputBorder: '#d0c8b0',
     },
     forest: {
-        background: '#e8f5e9',
+        background: '#c8e6c9',
         text: '#2e7d32',
         buttonBg: '#4caf50',
         buttonText: '#ffffff',
