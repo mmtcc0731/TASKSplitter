@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 const SidebarContainer = styled.div`
   position: relative;
-  width: ${({ isOpen }) => (isOpen ? '280px' : '0')};
+  width: ${({ $isOpen }) => ($isOpen ? '280px' : '0')};
   transition: width 0.3s ease;
   flex-shrink: 0;
 `;
@@ -17,7 +17,7 @@ const SidebarContent = styled.div`
   height: 100%;
   overflow-y: auto;
   transition: transform 0.3s ease;
-  transform: ${({ isOpen }) => (isOpen ? 'translateX(0)' : 'translateX(-100%)')};
+  transform: ${({ $isOpen }) => ($isOpen ? 'translateX(0)' : 'translateX(-100%)')};
   display: flex;
   flex-direction: column;
 `;
@@ -25,10 +25,10 @@ const SidebarContent = styled.div`
 const ToggleButton = styled.button`
   position: absolute;
   top: 10px;
-  right: ${({ isOpen }) => (isOpen ? '-20px' : '-16px')};
+  right: ${({ $isOpen }) => ($isOpen ? '-20px' : '-16px')};
   background-color: rgba(240, 240, 240, 0.7);
   border: none;
-  border-radius: ${({ isOpen }) => (isOpen ? '0 4px 4px 0' : '4px')};
+  border-radius: ${({ $isOpen }) => ($isOpen ? '0 4px 4px 0' : '4px')};
   padding: 8px 2px;
   cursor: pointer;
   z-index: 1000;
@@ -64,12 +64,10 @@ const ToggleSidebar = ({ children, onToggle }) => {
         return () => window.removeEventListener('resize', handleResize);
     }, [isOpen, onToggle]);
 
-    
-
     return (
-        <SidebarContainer isOpen={isOpen}>
-            <SidebarContent isOpen={isOpen}>{children}</SidebarContent>
-            <ToggleButton onClick={toggleSidebar} isOpen={isOpen}>
+        <SidebarContainer $isOpen={isOpen}>
+            <SidebarContent $isOpen={isOpen}>{children}</SidebarContent>
+            <ToggleButton onClick={toggleSidebar} $isOpen={isOpen}>
                 {isOpen ? <ChevronLeft size={16} /> : <ChevronRight size={16} />}
             </ToggleButton>
         </SidebarContainer>
