@@ -51,7 +51,7 @@ const ConnectionLines = forwardRef(({ tasks, getTaskColor }, ref) => {
                 ctx.fill();
 
                 ctx.beginPath();
-                ctx.arc(x, y, 2, 0, 2 * Math.PI);
+                ctx.arc(x, y, 2.5, 0, 2 * Math.PI);
                 ctx.fillStyle = 'white';
                 ctx.fill();
             };

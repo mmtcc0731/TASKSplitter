@@ -139,7 +139,7 @@ body.dark-mode {
 }
 
 .dark-mode .workspace-item.active .workspace-button {
-    color: #3498db;
+    color: #ccc;
 }
 
 .dark-mode .workspace-action-button {

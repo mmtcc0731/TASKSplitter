@@ -29,7 +29,11 @@ const TaskCard = ({ task, onEdit, onDelete, onStatusChange, color, isFiltered, o
         }
     };
 
-    const statusOptions = ['未着手', '進行中', '完了'];
+    const statusOptions = [
+        { value: '未着手', color: '#e74c3c' },
+        { value: '進行中', color: '#3498db' },
+        { value: '完了', color: '#2ecc71' }
+    ];
 
     return (
         <div
@@ -58,10 +62,17 @@ const TaskCard = ({ task, onEdit, onDelete, onStatusChange, color, isFiltered, o
                         <select
                             value={task.status}
                             onChange={(e) => onStatusChange(e.target.value)}
-                            className={`status-select ${task.status}`}
+                            className="status-select"
+                            style={{ color: statusOptions.find(option => option.value === task.status)?.color }}
                         >
                             {statusOptions.map(status => (
-                                <option key={status} value={status}>{status}</option>
+                                <option
+                                    key={status.value}
+                                    value={status.value}
+                                    style={{ color: status.color }}
+                                >
+                                    {status.value}
+                                </option>
                             ))}
                         </select>
                     </div>
