@@ -2,7 +2,7 @@
 .app {
   display: flex;
   height: 100vh;
-  background-color: #ff0000;
+  background-color: #f0f0f0;
   overflow: hidden;
 }
 
